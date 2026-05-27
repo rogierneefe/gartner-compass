@@ -1,0 +1,50 @@
+[
+  {
+    "id": "informatiemanager",
+    "title": "Informatiemanager / Directeur IV",
+    "emoji": "🏗️",
+    "description": "Datastrategie, informatiebeleid en systeemkeuzes. Brug tussen CvB en uitvoering.",
+    "tags": ["Datastrategie & Waardecreatie", "Dataplatform & Architectuur"],
+    "perspective_prompt": "Je adviseert het CvB over datastrategie en bepaalt welke platformen de hogeschool inzet."
+  },
+  {
+    "id": "beleidsadviseur",
+    "title": "Beleidsadviseur Onderwijs & Kwaliteit",
+    "emoji": "📊",
+    "description": "Vertaalt data naar stuurinformatie, kwaliteitszorg en onderwijsbeleid.",
+    "tags": ["Self-Service Analytics & BI", "Data Literacy & Cultuur"],
+    "perspective_prompt": "Je gebruikt data om onderbouwde beleidsadviezen te geven aan het management."
+  },
+  {
+    "id": "data-bi-specialist",
+    "title": "Data- / BI-specialist",
+    "emoji": "⚙️",
+    "description": "Bouwt dataplatform, bronsysteemkoppelingen, dashboards en rapportages.",
+    "tags": ["Dataplatform & Architectuur", "Self-Service Analytics & BI"],
+    "perspective_prompt": "Je bouwt de technische basis onder datagedreven werken bij de hogeschool."
+  },
+  {
+    "id": "onderzoeker-lectoraat",
+    "title": "Onderzoeker / Lectoraat-data",
+    "emoji": "🔬",
+    "description": "Toegepast onderzoek met data: learning analytics, open science, externe bronnen.",
+    "tags": ["AI / ML in Productie", "Data Governance & Kwaliteit"],
+    "perspective_prompt": "Je doet praktijkgericht onderzoek waarbij data en AI centraal staan."
+  },
+  {
+    "id": "governance-privacy",
+    "title": "Data Governance & Privacy Officer",
+    "emoji": "🛡️",
+    "description": "Datakwaliteit, eigenaarschap, AVG/AI Act en ethiek van studentdata.",
+    "tags": ["Data Governance & Kwaliteit", "Privacy, Ethiek & Regulering (AVG / AI Act)"],
+    "perspective_prompt": "Je borgt dat de hogeschool verantwoord en compliant met data omgaat."
+  },
+  {
+    "id": "opleidingsmanager",
+    "title": "Opleidingsmanager",
+    "emoji": "🎓",
+    "description": "Curriculum, onderwijskwaliteit en data over studiesucces en uitval.",
+    "tags": ["Data Literacy & Cultuur", "Organisatieverandering & Leiderschap"],
+    "perspective_prompt": "Je stuurt een opleiding aan en gebruikt data over studiesucces en rendement."
+  }
+]

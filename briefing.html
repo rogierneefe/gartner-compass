@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jouw Gartner D&A Briefing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Sticky nav (gevuld via JS) -->
+  <nav class="sticky-nav" id="stickyNav">
+    <a href="index.html" class="back-link">← Terug</a>
+    <span class="nav-brand" id="navBrand"></span>
+    <div class="nav-links">
+      <a href="#s1">Inzichten</a>
+      <a href="#s2">Radar</a>
+      <a href="#s3">Provocaties</a>
+      <a href="#s4">Aan de slag</a>
+      <a href="#s5">Thema's</a>
+      <a href="#s6">Vragen</a>
+      <a href="#s7">Andere lens</a>
+    </div>
+  </nav>
+
+  <!-- S0 Header -->
+  <header class="briefing-header" id="s0">
+    <a href="index.html" class="back-btn">← Kies een andere rol</a>
+    <span class="role-emoji" id="roleEmoji"></span>
+    <h1 id="roleTitle"></h1>
+    <p class="subtitle">Jouw Gartner D&amp;A briefing &nbsp;·&nbsp; 20 inzichten · Mei 2026 · London</p>
+  </header>
+
+  <main id="mainContent" style="display:none">
+
+    <!-- S1 Top inzichten -->
+    <section class="section" id="s1">
+      <h2 class="section-title" id="s1Title"></h2>
+      <div class="insight-list" id="insightList"></div>
+    </section>
+
+    <!-- S2 Radar -->
+    <section class="section" id="s2">
+      <h2 class="section-title">Signalen &amp; Risico's</h2>
+      <div class="radar-cols">
+        <div class="radar-col" id="radarTrends">
+          <h3>Signalen</h3>
+        </div>
+        <div class="radar-col risks" id="radarRisks">
+          <h3>Risico's</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- S3 Provocaties -->
+    <section class="section" id="s3">
+      <h2 class="section-title">Provocaties</h2>
+      <div id="provocations"></div>
+    </section>
+
+    <!-- S4 Direct aan de slag -->
+    <section class="section" id="s4">
+      <h2 class="section-title">Direct aan de slag</h2>
+      <div class="tools-grid" id="toolsGrid"></div>
+    </section>
+
+    <!-- S5 Themalandschap -->
+    <section class="section" id="s5">
+      <h2 class="section-title">Themalandschap</h2>
+      <table class="theme-table" id="themeTable">
+        <thead>
+          <tr>
+            <th>Thema</th>
+            <th>Nu</th>
+            <th>Nabij</th>
+            <th>Lang</th>
+          </tr>
+        </thead>
+        <tbody id="themeBody"></tbody>
+      </table>
+    </section>
+
+    <!-- S6 Team-vragen -->
+    <section class="section" id="s6">
+      <h2 class="section-title">Team-vragen</h2>
+      <div class="team-questions" id="teamQuestions"></div>
+    </section>
+
+    <!-- S7 Andere lens -->
+    <section class="section" id="s7">
+      <h2 class="section-title">Dezelfde data, een ander perspectief</h2>
+      <div class="lens-chips" id="lensChips"></div>
+    </section>
+
+  </main>
+
+  <script src="js/personalization.js"></script>
+  <script src="js/briefing.js"></script>
+</body>
+</html>

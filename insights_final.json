@@ -1,0 +1,362 @@
+[
+  {
+    "id": "gth1-bie27i-reference-architecture-for-federated-analytics-1622944",
+    "title": "Federated analytics vraagt een marktplaats, geen BI-eiland",
+    "summary": "De opvallendste stap is niet 'meer dashboards', maar het inrichten van analytics als een serviceframework met zes bouwblokken. Daarboven plaatst Gartner expliciet een data marketplace en catalogus, zodat decentrale domeinen zelfstandig kunnen werken zonder governance te verliezen.",
+    "type": "tool",
+    "horizon": "now",
+    "source": {
+      "session_title": "Reference Architecture for Federated Analytics",
+      "speaker": "Christopher Long",
+      "track": "Reference Architecture",
+      "date": "2026-05"
+    },
+    "themes": [
+      "Dataplatform & Architectuur",
+      "Self-Service Analytics & BI"
+    ],
+    "relevance_for_hogeschool": "Helpt om autonomie van opleidingen te combineren met centrale definities en governance. Voorkomt dat faculteiten en diensten elk hun eigen Power BI-eiland bouwen zonder gedeelde definities voor studentdata, kwaliteit en financien."
+  },
+  {
+    "id": "gth2-bie27i-reference-architecture-brief-da-governance-1622937",
+    "title": "Beleid zonder workflow is geen governance",
+    "summary": "Governance werkt alleen als beleid via een vaste workflow loopt en gekoppeld is aan datasets en processen. Metadata wordt daarbij de uitvoerende motor, niet alleen documentatie.",
+    "type": "practice",
+    "horizon": "now",
+    "source": {
+      "session_title": "Reference Architecture Brief: Data and Analytics Governance",
+      "speaker": "Lydia Ferguson",
+      "track": "Reference Architecture Brief",
+      "date": "2026-05"
+    },
+    "themes": [
+      "Data Governance & Kwaliteit",
+      "Privacy, Ethiek & Regulering (AVG / AI Act)"
+    ],
+    "relevance_for_hogeschool": "Voor hogescholen is governance vaak versnipperd over onderwijslogistiek, HR, onderzoek en leeromgevingen. Deze aanpak maakt AVG-, kwaliteits- en ethische eisen uitvoerbaar als een aaneengesloten keten per dataset, in plaats van losse controlelijstjes per afdeling."
+  },
+  {
+    "id": "gth3-bie27i-hype-cycle-for-generative-ai-2025-1611926",
+    "title": "De AI-race verschuift van chatbot naar bouwlaag",
+    "summary": "De echte waarde verschuift naar AI-engineeringcomponenten zoals vector databases en RAG. Schalen vraagt om infrastructuur, niet alleen toepassingen.",
+    "type": "trend",
+    "horizon": "near",
+    "source": {
+      "session_title": "Hype Cycle for Generative AI, 2025",
+      "speaker": "Afraz Jaffri",
+      "track": "Hype Cycle",
+      "date": "2026-05"
+    },
+    "themes": [
+      "AI / ML in Productie",
+      "Dataplatform & Architectuur"
+    ],
+    "relevance_for_hogeschool": "De neiging bij hogescholen is groot om direct te investeren in zichtbare AI-toepassingen voor studenten of medewerkers, terwijl de echte houdbaarheid afhangt van de onderliggende retrieval-, orchestration- en governancebouwlaag. Dit inzicht helpt om AI-initiatieven te prioriteren op technische haalbaarheid en herbruikbaarheid in plaats van op demo-waarde alleen."
+  },
+  {
+    "id": "32b-bie27i-maverick-insight-treat-ai-as-a-prescriptiononly-co-1639161",
+    "title": "Behandel AI als een gereguleerd medicijn",
+    "summary": "AI moet gecontroleerd beschikbaar zijn via risicoklassen en toegangsbeheer. Ongecontroleerd gebruik leidt tot risico's en verspilling.",
+    "type": "provocation",
+    "horizon": "long",
+    "source": {
+      "session_title": "Treat AI as a Prescription-Only Controlled Substance",
+      "speaker": "Daryl Plummer",
+      "track": "Maverick Insight",
+      "date": "2026-05"
+    },
+    "themes": [
+      "Privacy, Ethiek & Regulering (AVG / AI Act)",
+      "Organisatieverandering & Leiderschap"
+    ],
+    "relevance_for_hogeschool": "Hogescholen werken met gevoelige studentdata, toetsing en onderzoek, waar ongecontroleerd AI-gebruik direct reputatie- en compliance-risico's oplevert. Deze aanpak helpt om toepassingen zoals studieadvies, generatieve tools en proctoring expliciet te classificeren en alleen gecontroleerd beschikbaar te maken."
+  },
+  {
+    "id": "33b-bie27i-beyond-the-hype-ais-impact-on-headcount-and-busine-1613564",
+    "title": "AI rendeert pas na radicale procesherontwerp",
+    "summary": "AI levert pas waarde bij fundamentele herinrichting van processen. Kleine optimalisaties leveren weinig op.",
+    "type": "practice",
+    "horizon": "near",
+    "source": {
+      "session_title": "Beyond the Hype: AI's Impact on Headcount and Business Value",
+      "speaker": "Frances Karamouzis",
+      "track": "Business Value",
+      "date": "2026-05"
+    },
+    "themes": [
+      "AI / ML in Productie",
+      "Organisatieverandering & Leiderschap"
+    ],
+    "relevance_for_hogeschool": "Voor hogescholen betekent dit dat AI in onderwijslogistiek, studentbegeleiding of onderzoek alleen waarde oplevert als processen daadwerkelijk veranderen, zoals intake, toetsing en begeleiding. Het voorkomt de valkuil van losse pilots zonder impact en dwingt tot samenwerking tussen onderwijs, IT en beleid."
+  },
+  {
+    "id": "w5-bie27i-workshop-how-to-link-data-and-analytics-to-busines-1630596",
+    "title": "Begin niet met data maar met meetbare uitkomsten",
+    "summary": "Dataprojecten moeten starten bij een concreet, meetbaar business outcome en pas daarna terugredeneren naar gedrag, processen, KPI's, applicaties en data. Deze 'value pyramid' voorkomt dat datateams losse dashboards bouwen zonder aantoonbare impact op besluitvorming.",
+    "type": "tool",
+    "horizon": "now",
+    "source": {
+      "session_title": "Workshop: Link Data and Analytics to Business Outcomes",
+      "speaker": "Jorg Heizenberg",
+      "track": "Workshop",
+      "date": "2026-05"
+    },
+    "themes": [
+      "Datastrategie & Waardecreatie",
+      "Data Literacy & Cultuur"
+    ],
+    "relevance_for_hogeschool": "Direct toepasbaar voor hogescholen die worstelen met de vraag wat data oplevert. Het helpt teams om onderwijskwaliteit, studentretentie of onderzoeksprestaties expliciet te koppelen aan KPI's en onderliggende data, waardoor investeringen in BI en governance beter te verantwoorden zijn."
+  },
+  {
+    "id": "summary-gartner-da-summit-2026",
+    "title": "AI-waarde ontstaat uit vertrouwen en context",
+    "summary": "AI-succes draait niet om snelheid maar om samenhang: sterke datafundamenten, governance en workforce-alignment. De focus verschuift van inzichten naar impact, waarbij context en vertrouwen essentieel zijn om data daadwerkelijk naar beslissingen te brengen.",
+    "type": "trend",
+    "horizon": "near",
+    "source": {
+      "session_title": "Executive Summary",
+      "speaker": "Gartner",
+      "track": "Keynote",
+      "date": "2026-05"
+    },
+    "themes": [
+      "Datastrategie & Waardecreatie",
+      "Data Governance & Kwaliteit"
+    ],
+    "relevance_for_hogeschool": "Losse AI-initiatieven leveren weinig waarde zonder betrouwbare data, duidelijke governance en aansluiting op onderwijs- en onderzoeksprocessen. Instellingen moeten investeren in datakwaliteit, context zoals studentreis en curriculum, en vertrouwen om AI echt bruikbaar te maken in besluitvorming."
+  },
+  {
+    "id": "34c-bie27i-data-storytelling-in-the-realm-of-generative-ai-1612080",
+    "title": "Mooie dashboards versnellen slechte besluiten",
+    "summary": "GenAI maakt het eenvoudiger om overtuigende verhalen rond data te bouwen, maar vergroot daarmee ook het risico op mooie presentaties van verkeerde conclusies. Zonder datageletterdheid bij de ontvanger versterkt storytelling cognitieve bias in plaats van betere besluitvorming.",
+    "type": "risk",
+    "horizon": "now",
+    "source": {
+      "session_title": "Data Storytelling in the Realm of Generative AI",
+      "speaker": "Jeroen Cornelissen",
+      "track": "Analytics",
+      "date": "2026-05"
+    },
+    "themes": [
+      "Data Governance & Kwaliteit",
+      "Data Literacy & Cultuur"
+    ],
+    "relevance_for_hogeschool": "Beleidsrapportages en accreditatiedocumenten bij hogescholen leunen steeds meer op datavisualisaties. Dit inzicht helpt om kritisch te blijven op de onderliggende datakwaliteit en om te investeren in datageletterdheid bij beleidsmakers en opleidingsmanagers."
+  },
+  {
+    "id": "w3-bie27i-workshop-avoiding-the-top-mistakes-in-your-dashboard-1612780",
+    "title": "Dashboards falen door ontwerp, niet data",
+    "summary": "De meest voorkomende dashboardfouten zitten niet in de data maar in het ontwerp: verkeerde grafiektypen, te veel informatie, ontbrekende context en onduidelijke doelgroepkeuzes. Usability en visuele hierarchie bepalen of een dashboard daadwerkelijk tot betere beslissingen leidt.",
+    "type": "practice",
+    "horizon": "now",
+    "source": {
+      "session_title": "Avoiding Dashboard Mistakes",
+      "speaker": "Jeroen Cornelissen",
+      "track": "Workshop",
+      "date": "2026-05"
+    },
+    "themes": [
+      "Self-Service Analytics & BI",
+      "Data Literacy & Cultuur"
+    ],
+    "relevance_for_hogeschool": "Hogescholen investeren in BI-dashboards voor studentsucces, financien en kwaliteitszorg, maar de bruikbaarheid schiet vaak tekort. Deze workshop levert concrete ontwerpprincipes om dashboards te bouwen die door opleidingsmanagers en beleidsmakers echt worden gebruikt."
+  },
+  {
+    "id": "w12-bie27i-workshop-communicating-da-impact-with-business-val-1637454",
+    "title": "Stop met KPI's, start met value metrics",
+    "summary": "Datateams meten succes vaak in technische KPI's zoals datakwaliteit of pipelinesnelheid, terwijl bestuurders willen weten wat data oplevert in termen van kosten, risico of kwaliteit. Value metrics vertalen data-inspanning direct naar businessimpact en maken de bijdrage van het datateam zichtbaar.",
+    "type": "tool",
+    "horizon": "now",
+    "source": {
+      "session_title": "Communicating D&A Impact",
+      "speaker": "Brian Foster",
+      "track": "Workshop",
+      "date": "2026-05"
+    },
+    "themes": [
+      "Datastrategie & Waardecreatie",
+      "Data Governance & Kwaliteit"
+    ],
+    "relevance_for_hogeschool": "Voor hogescholen helpt dit om de investering in data-infrastructuur, governance en BI te verantwoorden richting CvB en financiers. Concreet: niet 'we verwerken 10.000 studentrecords per dag', maar 'onze data reduceert uitval met X% en bespaart Y uur aan handmatig werk'."
+  },
+  {
+    "id": "31f-bie27i-better-benchmarking-with-gartners-da-budget-effic-1630674",
+    "title": "Er is geen standaard data-budget",
+    "summary": "Er bestaat geen zinvolle standaard voor een data-budget als percentage van de omzet, omdat context alles bepaalt: sector, volwassenheidsniveau, strategische prioriteiten en interne kosten. Gartner biedt een benchmarkraamwerk dat wel vergelijkbaar is omdat het corrigeert voor deze contextvariabelen.",
+    "type": "provocation",
+    "horizon": "now",
+    "source": {
+      "session_title": "Better Benchmarking",
+      "speaker": "Brian Foster",
+      "track": "Value",
+      "date": "2026-05"
+    },
+    "themes": [
+      "Datastrategie & Waardecreatie",
+      "Organisatieverandering & Leiderschap"
+    ],
+    "relevance_for_hogeschool": "Hogescholen worstelen met de vraag hoeveel ze moeten investeren in data en BI ten opzichte van vergelijkbare instellingen. Dit raamwerk helpt om budgetdiscussies te objectiveren en onderbouwde keuzes te maken over waar te investeren in het datalandschap."
+  },
+  {
+    "id": "32f-bie27i-how-to-build-and-manage-data-products-efficiently-1611062",
+    "title": "Werk in dataproducten, niet projecten",
+    "summary": "Data als product behandelen betekent: een eigenaar aanwijzen, een levenscyclus definiëren, kwaliteitsafspraken vastleggen en hergebruik als doel stellen. Dit verschuift de focus van eenmalige projecten naar structurele datadiensten die meerdere afnemers bedienen.",
+    "type": "trend",
+    "horizon": "near",
+    "source": {
+      "session_title": "Build Data Products",
+      "speaker": "Lydia Ferguson",
+      "track": "Architecture",
+      "date": "2026-05"
+    },
+    "themes": [
+      "Dataplatform & Architectuur",
+      "Datastrategie & Waardecreatie"
+    ],
+    "relevance_for_hogeschool": "Voor hogescholen biedt dit een aanpak om datasets over studentroutes, toetsresultaten en arbeidsmarktuitkomsten niet steeds opnieuw te bouwen per rapportage, maar als herbruikbare dataproducten te beheren die opleidingen, beleidsadviseurs en lectoraten allemaal kunnen gebruiken."
+  },
+  {
+    "id": "w2-bie27i-workshop-assessing-agentic-analytics-readiness-acr-1630618",
+    "title": "Niet klaar? Begin niet met AI-agents",
+    "summary": "Agentic AI vereist een hogere datafundamentvolwassenheid dan de meeste organisaties hebben: robuuste pipelines, betrouwbare governance, gedefinieerde werkprocessen en duidelijke verantwoordelijkheden. Zonder die basis vergroot autonome AI de fouten en risico's in plaats van die te verminderen.",
+    "type": "risk",
+    "horizon": "now",
+    "source": {
+      "session_title": "Assessing Agentic Analytics Readiness",
+      "speaker": "Jeroen Cornelissen",
+      "track": "Workshop",
+      "date": "2026-05"
+    },
+    "themes": [
+      "AI / ML in Productie",
+      "Dataplatform & Architectuur"
+    ],
+    "relevance_for_hogeschool": "Hogescholen staan onder druk om snel met AI-agents aan de slag te gaan voor studentbegeleiding, roosteroptimalisatie of onderzoeksondersteuning. Dit readiness-framework helpt om eerst eerlijk te beoordelen of het datafundament en de organisatie klaar zijn, voordat er geinvesteerd wordt."
+  },
+  {
+    "id": "33a-bie27i-journey-for-realizing-value-from-data-analytics-an-1611090",
+    "title": "Waarde bewijzen is overtuigen",
+    "summary": "Waarderealisatie uit data is geen technisch traject maar een overtuigingsreis: stakeholders moeten geloven in de data, de aanpak en de uitkomst voordat ze ernaar handelen. Succesvolle datateams investeren evenveel in change management en communicatie als in technologie.",
+    "type": "provocation",
+    "horizon": "now",
+    "source": {
+      "session_title": "Journey for Realizing Value",
+      "speaker": "Sarah James",
+      "track": "Business Value",
+      "date": "2026-05"
+    },
+    "themes": [
+      "Datastrategie & Waardecreatie",
+      "Organisatieverandering & Leiderschap"
+    ],
+    "relevance_for_hogeschool": "Bij hogescholen is draagvlak voor datagedreven werken vaak het grootste obstakel, niet de technologie. Dit inzicht helpt informatiemanagers en beleidsadviseurs om de menselijke kant van data-adoptie serieus te nemen en te investeren in storytelling en stakeholdermanagement."
+  },
+  {
+    "id": "33d-bie27i-unstructured-data-management-is-the-missing-ingred-1613017",
+    "title": "AI faalt zonder ongestructureerde data",
+    "summary": "70 tot 90 procent van alle organisatiedata is ongestructureerd: e-mails, documenten, verslagen, audio en video. De meeste AI-toepassingen negeren deze data, waardoor ze werken op een fractie van de beschikbare informatie en systematisch blinde vlekken hebben.",
+    "type": "risk",
+    "horizon": "near",
+    "source": {
+      "session_title": "Unstructured Data Management",
+      "speaker": "Jason Medd",
+      "track": "Data Management",
+      "date": "2026-05"
+    },
+    "themes": [
+      "Dataplatform & Architectuur",
+      "AI / ML in Productie"
+    ],
+    "relevance_for_hogeschool": "Hogescholen produceren enorme hoeveelheden ongestructureerde data: verslagen van examencommissies, feedbackformulieren, collegeaantekeningen, onderzoeksrapporten. Zonder strategie voor deze data missen AI-toepassingen voor studentsucces en kwaliteitszorg cruciale context."
+  },
+  {
+    "id": "34a-bie27i-designing-the-future-ready-data-analytics-organiz-1611962",
+    "title": "D&A wordt een netwerkorganisatie",
+    "summary": "De toekomstige D&A-organisatie werkt niet meer als centrale afdeling maar als een hub-and-spoke netwerk: een kleine centrale kern borgt standaarden en governance, terwijl decentrale data-experts in de business de dagelijkse analytics uitvoeren. Dit vereist nieuwe rollen, competenties en aansturingsprincipes.",
+    "type": "trend",
+    "horizon": "long",
+    "source": {
+      "session_title": "Future-Ready D&A Organization",
+      "speaker": "Jörg Heizenberg",
+      "track": "Leadership",
+      "date": "2026-05"
+    },
+    "themes": [
+      "Organisatieverandering & Leiderschap",
+      "Data Literacy & Cultuur"
+    ],
+    "relevance_for_hogeschool": "Voor hogescholen biedt dit een blauwdruk om de spanning op te lossen tussen centrale informatiemanagement en decentrale behoefte van faculteiten en diensten. Het maakt duidelijk welke capaciteiten centraal moeten blijven en welke dichter op de opleiding of het lectoraat kunnen worden belegd."
+  },
+  {
+    "id": "32c-bie27i-how-to-build-the-context-layer-for-reliable-ai-age-1611250",
+    "title": "AI zonder context is onbetrouwbaar",
+    "summary": "AI-agents maken fouten wanneer ze ontbrekende context aanvullen met aannames. Een expliciete semantische laag, bestaande uit ontologieen, kennisgrafen en gedefinieerde entiteitsrelaties, zorgt dat agents de juiste betekenis geven aan data voordat ze redeneren of handelen.",
+    "type": "risk",
+    "horizon": "near",
+    "source": {
+      "session_title": "Build Context Layer for AI Agents",
+      "speaker": "Andrés García-Rodeja",
+      "track": "AI Architecture",
+      "date": "2026-05"
+    },
+    "themes": [
+      "Dataplatform & Architectuur",
+      "AI / ML in Productie"
+    ],
+    "relevance_for_hogeschool": "Bij hogescholen is context essentieel: een student is ook deelnemer, alumni en arbeidsmarktpersoon, en een vak heeft andere betekenis in het curriculum dan in de roostering. Zonder semantische laag produceren AI-agents voor studieadvies of kwaliteitszorg systematisch foute uitkomsten."
+  },
+  {
+    "id": "33c-bie27i-the-forgotten-art-of-data-science-in-ai-1612066",
+    "title": "AI zonder data science is stuurloos",
+    "summary": "In de rush naar generatieve AI worden klassieke data science-vaardigheden zoals statistiek, experimentontwerp en modelvalidatie snel vergeten. Zonder deze fundamenten worden AI-uitkomsten niet kritisch genoeg getoetst en worden fouten pas laat ontdekt.",
+    "type": "trend",
+    "horizon": "now",
+    "source": {
+      "session_title": "The Forgotten Art of Data Science",
+      "speaker": "Afraz Jaffri",
+      "track": "Data Science",
+      "date": "2026-05"
+    },
+    "themes": [
+      "AI / ML in Productie",
+      "Data Literacy & Cultuur"
+    ],
+    "relevance_for_hogeschool": "Voor lectoraten en onderzoeksgroepen die AI inzetten is dit een directe waarschuwing: zonder data science-fundament worden onderzoeksresultaten onbetrouwbaar. Ook voor hogescholen die data science in het curriculum aanbieden is dit een argument om klassieke statistiek niet te laten verdringen door promptengineering."
+  },
+  {
+    "id": "34b-bie27i-fueling-smarter-ai-unlocking-the-power-of-external-1612857",
+    "title": "AI-voorsprong komt van externe data",
+    "summary": "Interne data alleen is onvoldoende voor AI-toepassingen die context over de buitenwereld nodig hebben. Externe databronnen zoals sectordata, arbeidsmarktinformatie en demografische data verhogen de nauwkeurigheid en relevantie van modellen aanzienlijk.",
+    "type": "trend",
+    "horizon": "near",
+    "source": {
+      "session_title": "Fueling Smarter AI",
+      "speaker": "Kevin Quinn",
+      "track": "Data Strategy",
+      "date": "2026-05"
+    },
+    "themes": [
+      "Datastrategie & Waardecreatie",
+      "Dataplatform & Architectuur"
+    ],
+    "relevance_for_hogeschool": "Hogescholen kunnen hun AI-toepassingen voor studiesucces, loopbaanadvies en curriculumontwikkeling verrijken met externe data zoals CBS-arbeidsmarktcijfers, regionale werkgelegenheidsdata en sectorprognoses. Dit maakt studieadvies en beleidskeuzes veel sterker onderbouwd."
+  },
+  {
+    "id": "34e-bie27i-powering-ai-value-without-powering-down-sustainabi-1611479",
+    "title": "Meer AI betekent niet altijd meer waarde",
+    "summary": "Het schalen van AI leidt tot exponentieel hogere energie- en infrastructuurkosten, terwijl de marginale waarde per extra AI-toepassing daalt. Organisaties die ongecontroleerd schalen betalen meer voor minder waarde en ondermijnen tegelijk hun duurzaamheidsdoelstellingen.",
+    "type": "provocation",
+    "horizon": "near",
+    "source": {
+      "session_title": "Powering AI Value Without Powering Down Sustainability",
+      "speaker": "Pieter den Hamer",
+      "track": "AI Strategy",
+      "date": "2026-05"
+    },
+    "themes": [
+      "Datastrategie & Waardecreatie",
+      "Organisatieverandering & Leiderschap"
+    ],
+    "relevance_for_hogeschool": "Hogescholen met duurzaamheidsambities staan voor een directe spanning als ze tegelijk AI grootschalig willen uitrollen. Dit inzicht helpt om AI-investeringen te prioriteren op waarde per euro en per kg CO2, en om bewuste keuzes te maken over welke toepassingen de schaal rechtvaardigen."
+  }
+]
