@@ -11,7 +11,7 @@
 </head>
 <body>
 
-  <!-- Sticky nav (gevuld via JS) -->
+  <!-- Sticky nav -->
   <nav class="sticky-nav" id="stickyNav">
     <a href="index.html" class="back-link">← Terug</a>
     <span class="nav-brand" id="navBrand"></span>
@@ -32,6 +32,11 @@
     <span class="role-emoji" id="roleEmoji"></span>
     <h1 id="roleTitle"></h1>
     <p class="subtitle">Jouw Gartner D&amp;A briefing &nbsp;·&nbsp; 20 inzichten · Mei 2026 · London</p>
+    <!-- Knelpunt banner (#1) -->
+    <div class="knelpunt-banner" id="knelpuntBanner" style="display:none">
+      <span class="knelpunt-banner-label">Je startte vanuit:</span>
+      <span id="knelpuntBannerText"></span>
+    </div>
   </header>
 
   <main id="mainContent" style="display:none">
@@ -39,6 +44,27 @@
     <!-- S1 Top inzichten -->
     <section class="section" id="s1">
       <h2 class="section-title" id="s1Title"></h2>
+
+      <!-- Zoekbalk + filters (#5) -->
+      <div class="search-bar-wrap">
+        <input class="search-input" id="searchInput" type="search" placeholder="Zoek op titel of trefwoord…" autocomplete="off">
+        <div class="filter-chips" id="typeFilters">
+          <button class="filter-chip active" data-filter="type" data-value="">Alle types</button>
+          <button class="filter-chip" data-filter="type" data-value="tool">Tool</button>
+          <button class="filter-chip" data-filter="type" data-value="practice">Practice</button>
+          <button class="filter-chip" data-filter="type" data-value="trend">Trend</button>
+          <button class="filter-chip" data-filter="type" data-value="risk">Risk</button>
+          <button class="filter-chip" data-filter="type" data-value="provocation">Provocatie</button>
+        </div>
+        <div class="filter-chips" id="horizonFilters">
+          <button class="filter-chip active" data-filter="horizon" data-value="">Alle horizons</button>
+          <button class="filter-chip" data-filter="horizon" data-value="now">Nu</button>
+          <button class="filter-chip" data-filter="horizon" data-value="near">Nabij</button>
+          <button class="filter-chip" data-filter="horizon" data-value="long">Lang</button>
+        </div>
+        <p class="search-empty" id="searchEmpty" style="display:none">Geen inzichten gevonden voor deze zoekopdracht.</p>
+      </div>
+
       <div class="insight-list" id="insightList"></div>
     </section>
 
@@ -89,10 +115,11 @@
       <div class="team-questions" id="teamQuestions"></div>
     </section>
 
-    <!-- S7 Andere lens -->
+    <!-- S7 Andere lens (#4) -->
     <section class="section" id="s7">
       <h2 class="section-title">Dezelfde data, een ander perspectief</h2>
-      <div class="lens-chips" id="lensChips"></div>
+      <p class="section-lead">Schakel van rol om te zien hoe dezelfde 20 inzichten er voor anderen uitzien.</p>
+      <div class="lens-grid" id="lensChips"></div>
     </section>
 
   </main>

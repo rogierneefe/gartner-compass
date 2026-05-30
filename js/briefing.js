@@ -6,7 +6,7 @@ async function init() {
     fetch('data/roles.json'),
     fetch('data/insights.json')
   ]);
-  const roles = await rolesRes.json();
+  const roles      = await rolesRes.json();
   const allInsights = await insightsRes.json();
 
   const role = roles.find(r => r.id === roleId);
@@ -17,8 +17,15 @@ async function init() {
   // S0 Header
   document.getElementById('roleEmoji').textContent = role.emoji;
   document.getElementById('roleTitle').textContent = role.title;
-  document.getElementById('navBrand').textContent = role.emoji + ' ' + role.title;
+  document.getElementById('navBrand').textContent  = role.emoji + ' ' + role.title;
   document.title = 'Briefing · ' + role.title;
+
+  // Knelpunt-banner (#1)
+  const knelpunt = sessionStorage.getItem('selectedKnelpunt');
+  if (knelpunt) {
+    document.getElementById('knelpuntBannerText').textContent = knelpunt;
+    document.getElementById('knelpuntBanner').style.display = '';
+  }
 
   document.getElementById('mainContent').style.display = '';
 
@@ -30,6 +37,7 @@ async function init() {
   buildS6(insights);
   buildS7(roles, role);
   initStickyNav();
+  initSearch(insights);
 }
 
 /* ── S1 Top inzichten ── */
@@ -41,6 +49,10 @@ function buildS1(insights, role) {
   insights.forEach((insight, i) => {
     const item = document.createElement('div');
     item.className = 'insight-item';
+    item.dataset.type    = insight.type;
+    item.dataset.horizon = insight.horizon;
+    item.dataset.search  = (insight.title + ' ' + insight.summary).toLowerCase();
+
     item.innerHTML = `
       <div class="insight-header">
         <span class="insight-rank">${i + 1}</span>
@@ -107,17 +119,14 @@ function buildS2(allInsights) {
 function radarItem(insight) {
   const div = document.createElement('div');
   div.className = 'radar-item';
-  div.innerHTML = `
-    <h4>${insight.title}</h4>
-    <p>${insight.summary}</p>
-  `;
+  div.innerHTML = `<h4>${insight.title}</h4><p>${insight.summary}</p>`;
   return div;
 }
 
 /* ── S3 Provocaties ── */
-function buildS3(allInsights, role) {
+function buildS3(allInsights) {
   const provocations = allInsights.filter(i => i.type === 'provocation');
-  const container = document.getElementById('provocations');
+  const container    = document.getElementById('provocations');
   provocations.forEach(insight => {
     const div = document.createElement('div');
     div.className = 'provocation-item';
@@ -137,7 +146,7 @@ function buildS3(allInsights, role) {
 /* ── S4 Aan de slag ── */
 function buildS4(insights, role) {
   const tools = insights.filter(i => i.type === 'tool' || i.type === 'practice');
-  const grid = document.getElementById('toolsGrid');
+  const grid  = document.getElementById('toolsGrid');
   tools.forEach(insight => {
     const card = document.createElement('div');
     card.className = 'tool-card';
@@ -156,7 +165,7 @@ function buildS4(insights, role) {
 /* ── S5 Themalandschap ── */
 function buildS5(allInsights) {
   const matrix = buildThemeMatrix(allInsights);
-  const tbody = document.getElementById('themeBody');
+  const tbody  = document.getElementById('themeBody');
   matrix.forEach(row => {
     const tr = document.createElement('tr');
     tr.innerHTML = `
@@ -176,7 +185,7 @@ function dot(n) {
 
 /* ── S6 Team-vragen ── */
 function buildS6(insights) {
-  const top3 = insights.slice(0, 3);
+  const top3      = insights.slice(0, 3);
   const container = document.getElementById('teamQuestions');
   top3.forEach((insight, i) => {
     const question = generateTeamQuestion(insight);
@@ -194,29 +203,87 @@ function buildS6(insights) {
   initCopyButtons(container);
 }
 
-/* ── S7 Andere lens ── */
+/* ── S7 Andere lens met focus (#4) ── */
 function buildS7(roles, currentRole) {
   const container = document.getElementById('lensChips');
   roles.forEach(role => {
-    const chip = document.createElement('button');
-    chip.className = 'lens-chip' + (role.id === currentRole.id ? ' current' : '');
-    chip.textContent = role.emoji + ' ' + role.title;
-    if (role.id !== currentRole.id) {
-      chip.addEventListener('click', () => {
+    const isCurrent = role.id === currentRole.id;
+    const card = document.createElement('div');
+    card.className = 'lens-card' + (isCurrent ? ' current' : '');
+    card.innerHTML = `
+      <span class="lens-card-emoji">${role.emoji}</span>
+      <div class="lens-card-body">
+        <strong class="lens-card-title">${role.title}</strong>
+        <span class="lens-card-focus">${role.lens_focus || ''}</span>
+      </div>
+      ${isCurrent ? '<span class="lens-card-badge">Huidige rol</span>' : ''}
+    `;
+    if (!isCurrent) {
+      card.setAttribute('role', 'button');
+      card.setAttribute('tabindex', '0');
+      card.addEventListener('click', () => {
         sessionStorage.setItem('selectedRole', role.id);
+        sessionStorage.removeItem('selectedKnelpunt');
         window.location.reload();
       });
+      card.addEventListener('keydown', e => {
+        if (e.key === 'Enter' || e.key === ' ') card.click();
+      });
     }
-    container.appendChild(chip);
+    container.appendChild(card);
   });
+}
+
+/* ── Zoekbalk + filters (#5) ── */
+function initSearch(insights) {
+  const searchInput  = document.getElementById('searchInput');
+  const typeFilters  = document.getElementById('typeFilters');
+  const horizonFilters = document.getElementById('horizonFilters');
+  const emptyMsg     = document.getElementById('searchEmpty');
+
+  let activeType    = '';
+  let activeHorizon = '';
+
+  function applyFilters() {
+    const q = searchInput.value.toLowerCase().trim();
+    const items = document.querySelectorAll('#insightList .insight-item');
+    let visible = 0;
+
+    items.forEach(item => {
+      const matchType    = !activeType    || item.dataset.type    === activeType;
+      const matchHorizon = !activeHorizon || item.dataset.horizon === activeHorizon;
+      const matchSearch  = !q             || item.dataset.search.includes(q);
+      const show = matchType && matchHorizon && matchSearch;
+      item.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+
+    emptyMsg.style.display = visible === 0 ? '' : 'none';
+  }
+
+  searchInput.addEventListener('input', applyFilters);
+
+  function bindFilterGroup(container, key) {
+    container.querySelectorAll('.filter-chip').forEach(btn => {
+      btn.addEventListener('click', () => {
+        container.querySelectorAll('.filter-chip').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        if (key === 'type')    activeType    = btn.dataset.value;
+        if (key === 'horizon') activeHorizon = btn.dataset.value;
+        applyFilters();
+      });
+    });
+  }
+
+  bindFilterGroup(typeFilters,    'type');
+  bindFilterGroup(horizonFilters, 'horizon');
 }
 
 /* ── Sticky nav ── */
 function initStickyNav() {
   const nav = document.getElementById('stickyNav');
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 80) nav.classList.add('visible');
-    else nav.classList.remove('visible');
+    nav.classList.toggle('visible', window.scrollY > 80);
   }, { passive: true });
 }
 
@@ -241,7 +308,7 @@ function initCopyButtons(container) {
   });
 }
 
-/* ── Helpers ── */
+/* ── Helper ── */
 function horizonLabel(h) {
   return { now: 'Nu', near: 'Nabij', long: 'Lang' }[h] || h;
 }

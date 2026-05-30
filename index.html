@@ -19,11 +19,26 @@
   <main>
     <section class="hero">
       <h1>Wat betekende Gartner D&A voor jouw werk?</h1>
-      <p>20 inzichten, gepersonaliseerd op jouw rol binnen de hogeschool.</p>
+      <p>20 inzichten, gepersonaliseerd op jouw rol of knelpunt binnen de hogeschool.</p>
+
+      <!-- Tab switcher (#1) -->
+      <div class="entry-tabs">
+        <button class="entry-tab active" id="tabRol" onclick="switchTab('rol')">Kies je rol</button>
+        <button class="entry-tab" id="tabKnelpunt" onclick="switchTab('knelpunt')">Start bij je knelpunt</button>
+      </div>
     </section>
 
-    <div class="role-grid" id="roleGrid">
-      <!-- Rolkaarten worden ingeladen via JS -->
+    <!-- Rol-tab -->
+    <div id="panelRol">
+      <div class="role-grid" id="roleGrid"></div>
+    </div>
+
+    <!-- Knelpunt-tab (#1) -->
+    <div id="panelKnelpunt" style="display:none">
+      <div class="knelpunt-intro section" style="padding-bottom:0">
+        <p class="knelpunt-lead">Welk vraagstuk speelt er bij jou? We koppelen je aan de meest relevante inzichten.</p>
+      </div>
+      <div class="knelpunt-list" id="knelpuntList"></div>
     </div>
   </main>
 
@@ -31,6 +46,7 @@
     20 inzichten · 6 rollen · Gartner D&A Summit 2026 · London
   </footer>
 
+  <script src="js/personalization.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
